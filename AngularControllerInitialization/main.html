@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Controller Initialization</title>
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="module.js"></script>
+	</head>
+	<body ng-app="app">
+		<div ng-controller="TestController as test"
+			 set-info="10/09/2015"
+			 init-option2-range="5"
+			 init-option1-range="3">
+			<label>Info:</label> {{test.info}}
+			<br />
+			
+			<label>Option 1</label>
+			<br />
+			<span ng-repeat="option in test.options1">
+				{{option}}
+				<br />
+			</span>
+			
+			<label>Option 2</label>
+			<br />
+			<span ng-repeat="option in test.options2">
+				{{option}}
+				<br />
+			</span>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	</body>
+</html>
