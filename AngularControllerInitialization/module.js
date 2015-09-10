@@ -1,3 +1,9 @@
+/*I made this to use in a asp.net mvc application.
+Working with C# data, converting it to a json string and passing it to
+the controller through the html. Then this new directive could
+deserialize these values (converting it to json) and initializing the
+controller.*/
+
 $(function () {
 	var app = angular.module("app", []);
 	
